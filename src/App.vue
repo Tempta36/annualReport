@@ -3,7 +3,7 @@
     <button class="audioBtn" ref="toPlay" @click="audioBtnClick">toPaly</button>
     <home></home>
     <!-- <audio loop src="./views/assets/music.mp3" ref="audio" :muted="true" preload autoplay></audio> -->
-    <audio loop src="http://demo.kunlunerp.cn/music/music.mp3" ref="audio" :muted="true" preload autoplay></audio>
+    <audio loop src="path.to.mp3.resource" ref="audio" :muted="true" preload autoplay></audio>
   </div>
 </template>
 <script>
