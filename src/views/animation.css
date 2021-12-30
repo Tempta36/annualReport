@@ -1,0 +1,140 @@
+.ani-slide-in-left {
+  animation: slide-in-left 2s ease 0s 1 normal forwards;
+}
+@keyframes slide-in-left {
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ani-slide-in-right {
+  animation: slide-in-right 2s ease 0s 1 normal forwards;
+}
+@keyframes slide-in-right {
+  0%{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.ani-bounce-in {
+  animation: bounce-in 1s ease 0s 1 normal forwards;
+}
+@keyframes bounce-in {
+  0%{
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.0);
+  }
+  70%{
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.ani-slide-in-fwd-bottom {
+  animation: slide-in-fwd-bottom 2s ease 0s 1 normal forwards;
+}
+@keyframes slide-in-fwd-bottom {
+  0%{
+    transform: translateZ(-300px) translateY(600px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.ani-slide-in-fwd-top {
+  animation: slide-in-fwd-top 2s ease 0s 1 normal forwards;
+}
+@keyframes slide-in-fwd-top {
+  0%{
+    transform: translateZ(-300px) translateY(-600px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.ani-focus-in-contract {
+  animation: focus-in-contract 1s ease 0s 1 normal forwards;
+}
+@keyframes focus-in-contract {
+  0%{
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+.ani-focus-in-expand {
+  animation: focus-in-expand 1s ease 0s 1 normal forwards;
+}
+@keyframes focus-in-expand {
+  0%{
+    letter-spacing: -.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.ani-text-focus-in {
+  animation: text-focus-in 2s ease 0s 1 normal forwards;
+}
+@keyframes text-focus-in {
+  0%{
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.ani-fade-in-bottom {
+  animation: fade-in-bottom 2.6s ease 0s infinite normal none;
+}
+@keyframes fade-in-bottom {
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

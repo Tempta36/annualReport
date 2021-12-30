@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .meet p:nth-child(3), .meet p:nth-child(4), .meet p:nth-child(5) {
+        margin-left: 60%;
+    }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.white {
+    color: #FFFFFF;
+}
+.orange {
+    color: #F09048;
+}
+.blue {
+    color: #000C40;
+}
+.marginLeft {
+    margin-left: 16px;
+}
+.marginRight {
+    margin-right: 16px;
+}
+.bigWorld {
+    font-size: 34px;
+    display: inline-block;
+}
+.pink {
+    color: #DA828F;
+}
+
+/*------------------------------------------------------------------------*/
+.welcome, .check, .meet, .growUp, .power, .sure, .strive, .ciyun, .login, .honor, .message, .thank, .say {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.welcome p, .check p, .meet p, .growUp p, .power p, .sure p, .strive p, .ciyun p, .login p, .honor p {
+    padding: 0 4vh;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0;
+    white-space: nowrap;
+}
+.welcome p:nth-child(1), 
+.check p:nth-child(1), 
+.meet p:nth-child(1), 
+.growUp p:nth-child(1),
+.power p:nth-child(1),
+.ciyun p:nth-child(1),
+.login p:nth-child(1),
+.honor p:nth-child(1) {
+    margin-top: 4vh;
+}
+
+.welcome {
+    background-image: url('./assets/bg1.jpg');
+}
+.welcome .greenBall {
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    top: 12vh;
+    right: 0;
+    z-index: 1;
+}
+.welcome > div {
+    width: 100%;
+    position: absolute;
+    bottom: 8vh;
+    font-size: 30px;
+    opacity: 0;
+    text-align: center;
+    animation-delay: 1.4s;
+}
+.welcome > div img {
+    width: 50px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+.welcome p:nth-child(2), .check p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.welcome p:nth-child(3), .check p:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.welcome p:nth-child(4), .check p:nth-child(4) {
+    margin: 2vh 0;
+    animation-delay: 0.6s;
+}
+.welcome p:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.welcome p:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.check {
+    padding: 0;
+    background-image: url('./assets/bg2.jpg');
+    /* background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: animatedBackground 10s linear infinite; */
+}
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+.check p {
+    padding: 0 4vh;
+}
+.check img {
+    position: absolute;
+    width: 200%;
+}
+.check .loginWrap {
+    width: cacl(100%-4vh);
+    max-width: 400px;
+    margin: 4vh;
+    padding: 5vh 0;
+    border-radius: 10px;
+    background-image: linear-gradient(#ffffff00, #DA828F);
+    opacity: 0;
+    animation-delay: 1s;
+}
+.check .loginWrap .failMsg {
+    margin-bottom: -2vh;
+    margin-top: 3vh;
+    padding: 0 2vh;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #FF526C;
+}
+.check .loginWrap .cellWrap {
+    position: relative;
+    padding: 0 4vw;
+}
+.check .loginWrap .cellWrap img {
+    width: 14px;
+    height: 14px;
+    right: 5vh;
+    top: 12px;
+}
+.check .loginWrap .codeWrap {
+    position: relative;
+    margin-top: 2vh;
+    padding: 0 4vw;
+}
+.check .loginWrap .btnWrap {
+    margin-top: 3vh;
+    padding: 0 4vw;
+}
+.check .loginWrap input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 38px;
+    background: #DC8491;
+    border-radius: 6px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.check .loginWrap input::placeholder {
+    font-size: 14px;
+    color: #ffffffa6;
+}
+.check .loginWrap input:focus, .check .loginWrap .btnWrap button:focus {
+    outline: none;
+}
+.check .loginWrap .codeWrap span {
+    position: absolute;
+    right: 10px;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 38px;
+    font-size: 14px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+.check .loginWrap .btnWrap button {
+    width: 100%;
+    line-height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #DC8491;
+    font-size: 18px;
+}
+.check .loginWrap .btnWrap button:active {
+    background: #efd8db;
+}
+
+
+.meet {
+    padding: 0;
+    background-image: url('./assets/bg3.jpg');
+}
+.meet p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.meet p:nth-child(3) {
+    margin-top: 15vh;
+    animation-delay: 0.4s;
+}
+.meet p:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.meet p:nth-child(5) {
+    animation-delay: 1s;
+}
+.meet p:nth-child(3), .meet p:nth-child(4), .meet p:nth-child(5) {
+    margin-left: 30%;
+}
+
+
+.growUp {
+    padding: 0;
+    background-image: url('./assets/bg4.png');
+}
+.growUp p:nth-child(3),.growUp p:nth-child(5) {
+    margin-top: 5vh;
+}
+.growUp p:nth-child(3), .growUp p:nth-child(4) {
+    margin-left: 10%;
+    width: 200px;
+    text-align: right;
+}
+.growUp p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.growUp p:nth-child(3) {
+    animation-delay: 1.4s;
+}
+.growUp p:nth-child(4) {
+    animation-delay: 1.4s;
+}
+.growUp p:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.growUp p:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+
+.power {
+    padding: 0;
+    background-image: url('./assets/bg5.png');
+}
+.power p {
+    text-align: right;
+}
+.power p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.power p:nth-child(3) {
+    margin: 2vh 0;
+    animation-delay: 0.4s;
+}
+.power p:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.power p:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+
+.sure {
+    padding: 0;
+    background-image: url('./assets/bg6.png');
+}
+.sure p {
+    text-align: right;
+}
+.sure p:nth-child(1) {
+    margin-top: 110%;
+    animation-delay: 0.8s;
+}
+.sure p:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.sure p:nth-child(3) {
+    margin: 2vh 0;
+    animation-delay: 0.4s;
+}
+.sure p:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.strive {
+    padding: 0;
+    background-image: url('./assets/bg7.png');
+}
+.strive p {
+    text-align: center;
+}
+.strive p:nth-child(1) {
+    margin-top: 60vh;
+}
+.strive p:nth-child(3) {
+    font-size: 30px;
+    line-height: 36px;
+}
+.strive p:nth-child(6) {
+    margin-top: 1vh;
+}
+
+
+.ciyun {
+    padding: 0;
+    background-image: url('./assets/bg8.png');
+}
+.ciyun p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.ciyun p:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.ciyun p:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.ciyun div:nth-child(5) {
+    margin: 4vh 0;
+    height: 40vh;
+    animation-delay: 1s;
+}
+.ciyun p:nth-child(6) {
+    margin-top: 4vh;
+    animation-delay: 0.8s;
+}
+.ciyun p:nth-child(7) {
+    animation-delay: 1s;
+}
+.ciyun p:nth-child(8) {
+    animation-delay: 1.2s;
+}
+
+
+.login {
+    padding: 0;
+    background-image: url('./assets/bg9.jpg');
+}
+.login p:nth-child(1) {
+    text-align: center;
+    margin-left: 18px;
+    margin-bottom: 8vh;
+}
+.login p:nth-child(2), .login p:nth-child(3), .login p:nth-child(4) {
+    width: 50%;
+    padding: 0;
+    text-align: right;
+}
+.login p:nth-child(5), .login p:nth-child(6), .login p:nth-child(7) {
+    width: 50%;
+    padding: 0;
+    margin-left:50%;
+    text-align: left;
+}
+.login p:nth-child(3), .login p:nth-child(6) {
+    animation-delay: 0.3s;
+}
+.login p:nth-child(4), .login p:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+
+.honor {
+    padding: 0 14vw;
+    background-image: url('./assets/bg10.jpg');
+}
+.honor p:nth-child(1) {
+    margin-top: 45vh;
+}
+.honor p:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.honor p:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.honor p:nth-child(4) {
+    margin: 2vh 0;
+    font-size: 34px;
+    opacity: 0;
+    animation-delay: 1.8s;
+}
+.honor p:nth-child(5) {
+    animation-delay: 0.6s;
+}
+.honor p:nth-child(6) {
+    margin-top: 8vh;
+    animation-delay: 0.8s;
+}
+
+
+.message, .thank, .say {
+    padding: 6vh 16vw;
+    box-sizing: border-box;
+}
+.message {
+    background-image: url('./assets/bg11.jpg');
+}
+.message p, .thank > p {
+    margin-bottom: 12vh;
+    text-align: right;
+}
+.message .content p {
+    margin: 0;
+}
+.message .content p:nth-child(4) {
+    margin-top: 4vh;
+    text-align: left;
+}
+.message .content p:nth-child(5) {
+    margin-top: 4vh;
+}
+.message .content, .thank .content, .say .content {
+    height: 50vh;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+
+.thank {
+    background-image: url('./assets/bg12.jpg');
+}
+.thank .content .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.thank .content p {
+    text-align: right;
+}
+.thank .content p:nth-child(3) {
+    margin-top: 3vh;
+}
+.thank .content p:nth-child(8) {
+    margin-top: 3vh;
+}
+
+
+.say {
+    background-image: url('./assets/bg13.jpg');
+}
+.say > p {
+    margin-bottom: 8vh;
+    text-align: right;
+}
+.say .content p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 1vh;
+    letter-spacing: 2px;
+}
+
+div.content p.right {
+    text-align: right;
+}
