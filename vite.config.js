@@ -5,7 +5,7 @@ export default {
   server: {
     proxy: {
       '/yearsummary': {
-        target: 'http://dev.kunlunerp.cn:8080',
+        target: 'url.to.backend',
         changeOrigin: true
       }
     }
